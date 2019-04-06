@@ -9,3 +9,16 @@ C:\Users\ameri\OneDrive\Documentos\Visual Studio 2015\Projects\SopaDeLetras\Sopa
 C:\Users\ameri\OneDrive\Documentos\Visual Studio 2015\Projects\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.csproj.GenerateResource.Cache
 C:\Users\ameri\OneDrive\Documentos\Visual Studio 2015\Projects\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.exe
 C:\Users\ameri\OneDrive\Documentos\Visual Studio 2015\Projects\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.pdb
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\bin\Release\SopaDeLetras.exe.config
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\bin\Release\SopaDeLetras.exe
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\bin\Release\SopaDeLetras.pdb
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.csprojAssemblyReference.cache
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.Form1.resources
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.Nivel1.resources
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.Nivel2.resources
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.Nivel3.resources
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.Properties.Resources.resources
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.csproj.GenerateResource.cache
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.csproj.CoreCompileInputs.cache
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.exe
+C:\Users\david\Downloads\SopaDeLetras\SopaDeLetras\obj\Release\SopaDeLetras.pdb
