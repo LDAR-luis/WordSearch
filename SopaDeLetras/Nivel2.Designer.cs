@@ -75,7 +75,7 @@
             this.N2Pa1.BackColor = System.Drawing.Color.Transparent;
             this.N2Pa1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N2Pa1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.N2Pa1.Location = new System.Drawing.Point(1075, 144);
+            this.N2Pa1.Location = new System.Drawing.Point(1049, 144);
             this.N2Pa1.Name = "N2Pa1";
             this.N2Pa1.Size = new System.Drawing.Size(129, 22);
             this.N2Pa1.TabIndex = 3;
@@ -87,7 +87,7 @@
             this.N2PA2.BackColor = System.Drawing.Color.Transparent;
             this.N2PA2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N2PA2.ForeColor = System.Drawing.Color.Transparent;
-            this.N2PA2.Location = new System.Drawing.Point(1075, 200);
+            this.N2PA2.Location = new System.Drawing.Point(1049, 200);
             this.N2PA2.Name = "N2PA2";
             this.N2PA2.Size = new System.Drawing.Size(78, 22);
             this.N2PA2.TabIndex = 3;
@@ -99,7 +99,7 @@
             this.N2pa3.BackColor = System.Drawing.Color.Transparent;
             this.N2pa3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N2pa3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.N2pa3.Location = new System.Drawing.Point(1075, 256);
+            this.N2pa3.Location = new System.Drawing.Point(1049, 256);
             this.N2pa3.Name = "N2pa3";
             this.N2pa3.Size = new System.Drawing.Size(153, 22);
             this.N2pa3.TabIndex = 3;
@@ -111,11 +111,11 @@
             this.N2PA4.BackColor = System.Drawing.Color.Transparent;
             this.N2PA4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N2PA4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.N2PA4.Location = new System.Drawing.Point(1075, 312);
+            this.N2PA4.Location = new System.Drawing.Point(1049, 312);
             this.N2PA4.Name = "N2PA4";
-            this.N2PA4.Size = new System.Drawing.Size(95, 22);
+            this.N2PA4.Size = new System.Drawing.Size(121, 22);
             this.N2PA4.TabIndex = 3;
-            this.N2PA4.Text = "FUNCION";
+            this.N2PA4.Text = "EXPRESION";
             // 
             // N2PA5
             // 
@@ -123,7 +123,7 @@
             this.N2PA5.BackColor = System.Drawing.Color.Transparent;
             this.N2PA5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N2PA5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.N2PA5.Location = new System.Drawing.Point(1077, 357);
+            this.N2PA5.Location = new System.Drawing.Point(1051, 357);
             this.N2PA5.Name = "N2PA5";
             this.N2PA5.Size = new System.Drawing.Size(109, 22);
             this.N2PA5.TabIndex = 3;
@@ -135,7 +135,7 @@
             this.N2PA6.BackColor = System.Drawing.Color.Transparent;
             this.N2PA6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N2PA6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.N2PA6.Location = new System.Drawing.Point(1077, 414);
+            this.N2PA6.Location = new System.Drawing.Point(1051, 414);
             this.N2PA6.Name = "N2PA6";
             this.N2PA6.Size = new System.Drawing.Size(101, 22);
             this.N2PA6.TabIndex = 3;
@@ -147,7 +147,7 @@
             this.N2pic1.BackColor = System.Drawing.Color.Transparent;
             this.N2pic1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N2pic1.BackgroundImage")));
             this.N2pic1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N2pic1.Location = new System.Drawing.Point(969, 116);
+            this.N2pic1.Location = new System.Drawing.Point(943, 116);
             this.N2pic1.Name = "N2pic1";
             this.N2pic1.Size = new System.Drawing.Size(100, 50);
             this.N2pic1.TabIndex = 4;
@@ -158,7 +158,7 @@
             this.N2PIC2.BackColor = System.Drawing.Color.Transparent;
             this.N2PIC2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N2PIC2.BackgroundImage")));
             this.N2PIC2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N2PIC2.Location = new System.Drawing.Point(969, 172);
+            this.N2PIC2.Location = new System.Drawing.Point(943, 172);
             this.N2PIC2.Name = "N2PIC2";
             this.N2PIC2.Size = new System.Drawing.Size(100, 50);
             this.N2PIC2.TabIndex = 4;
@@ -169,7 +169,7 @@
             this.N2PIC3.BackColor = System.Drawing.Color.Transparent;
             this.N2PIC3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N2PIC3.BackgroundImage")));
             this.N2PIC3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N2PIC3.Location = new System.Drawing.Point(969, 228);
+            this.N2PIC3.Location = new System.Drawing.Point(943, 228);
             this.N2PIC3.Name = "N2PIC3";
             this.N2PIC3.Size = new System.Drawing.Size(100, 50);
             this.N2PIC3.TabIndex = 4;
@@ -180,7 +180,7 @@
             this.N2PIC4.BackColor = System.Drawing.Color.Transparent;
             this.N2PIC4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N2PIC4.BackgroundImage")));
             this.N2PIC4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N2PIC4.Location = new System.Drawing.Point(969, 284);
+            this.N2PIC4.Location = new System.Drawing.Point(943, 284);
             this.N2PIC4.Name = "N2PIC4";
             this.N2PIC4.Size = new System.Drawing.Size(100, 50);
             this.N2PIC4.TabIndex = 4;
@@ -191,7 +191,7 @@
             this.N2PIC5.BackColor = System.Drawing.Color.Transparent;
             this.N2PIC5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N2PIC5.BackgroundImage")));
             this.N2PIC5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N2PIC5.Location = new System.Drawing.Point(969, 340);
+            this.N2PIC5.Location = new System.Drawing.Point(943, 340);
             this.N2PIC5.Name = "N2PIC5";
             this.N2PIC5.Size = new System.Drawing.Size(100, 50);
             this.N2PIC5.TabIndex = 4;
@@ -202,7 +202,7 @@
             this.N2PIC6.BackColor = System.Drawing.Color.Transparent;
             this.N2PIC6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N2PIC6.BackgroundImage")));
             this.N2PIC6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N2PIC6.Location = new System.Drawing.Point(969, 396);
+            this.N2PIC6.Location = new System.Drawing.Point(943, 396);
             this.N2PIC6.Name = "N2PIC6";
             this.N2PIC6.Size = new System.Drawing.Size(100, 50);
             this.N2PIC6.TabIndex = 4;

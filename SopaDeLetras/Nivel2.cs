@@ -13,6 +13,7 @@ namespace SopaDeLetras
     public partial class Nivel2 : Form
     {
         Random letras = new Random();
+        bool p1 = false, p2 = false, p3 = false, p4 = false, p5 = false, p6 = false;
         int segundos;
         int minutos;
         public Nivel2()
@@ -79,13 +80,16 @@ namespace SopaDeLetras
             TablaN2[10, 14].Value = 'E';
             TablaN2[11, 14].Value = 'S';
 
-            TablaN2[2, 12].Value = 'F';
-            TablaN2[2, 11].Value = 'U';
-            TablaN2[2, 10].Value = 'N';
-            TablaN2[2, 9].Value = 'C';
-            TablaN2[2, 8].Value = 'I';
-            TablaN2[2, 7].Value = 'O';
-            TablaN2[2, 6].Value = 'N';
+            TablaN2[2, 12].Value = 'E';
+            TablaN2[2, 11].Value = 'X';
+            TablaN2[2, 10].Value = 'P';
+            TablaN2[2, 9].Value = 'R';
+            TablaN2[2, 8].Value = 'E';
+            TablaN2[2, 7].Value = 'C';
+            TablaN2[2, 6].Value = 'I';
+            TablaN2[2, 5].Value = 'O';
+            TablaN2[2, 4].Value = 'N';
+
 
             TablaN2[9, 13].Value = 'C';
             TablaN2[10, 12].Value = 'H';
@@ -120,7 +124,7 @@ namespace SopaDeLetras
 
 
         public void validacion() {
-            if (TablaN2[1, 2].Style.BackColor == Color.Aqua &&
+            if (!p1 && TablaN2[1, 2].Style.BackColor == Color.Aqua &&
                 TablaN2[2, 3].Style.BackColor == Color.Aqua &&
                 TablaN2[3, 4].Style.BackColor == Color.Aqua &&
                 TablaN2[4, 5].Style.BackColor == Color.Aqua &&
@@ -130,21 +134,37 @@ namespace SopaDeLetras
                 TablaN2[8, 9].Style.BackColor == Color.Aqua &&
                 TablaN2[9, 10].Style.BackColor == Color.Aqua)
             {
-
+                p1 = true;
                 N2pic1.Visible = true;
+                if (MessageBox.Show("Cerradura o Clausura: Es cuando un el diseño de un automata se puede regresar " +
+                    "al mismo estado realizando una o varias transiciones",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Teor%C3%ADa_de_aut%C3%B3matas");
+                }
             }
 
-            if (TablaN2[11, 4].Style.BackColor == Color.Aqua &&
+            if (!p2 && TablaN2[11, 4].Style.BackColor == Color.Aqua &&
                 TablaN2[11, 5].Style.BackColor == Color.Aqua &&
                 TablaN2[11, 6].Style.BackColor == Color.Aqua &&
                 TablaN2[11, 7].Style.BackColor == Color.Aqua &&
                 TablaN2[11, 8].Style.BackColor == Color.Aqua)
 
             {
+                p2 = true;
                 N2PIC2.Visible = true;
+                if (MessageBox.Show("Grafo: es un conjunto de objetos llamados vértices o nodos(estados) unidos por enlaces " +
+                    "llamados aristas o arcos(transiciones), que permiten representar relaciones binarias entre elementos " +
+                    "de un conjunto(automata).",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Grafo");
+                }
             }
 
-            if (TablaN2[0, 14].Style.BackColor == Color.Aqua &&
+            if (!p3 && TablaN2[0, 14].Style.BackColor == Color.Aqua &&
                 TablaN2[1, 14].Style.BackColor == Color.Aqua &&
                 TablaN2[2, 14].Style.BackColor == Color.Aqua &&
                 TablaN2[3, 14].Style.BackColor == Color.Aqua &&
@@ -157,20 +177,37 @@ namespace SopaDeLetras
                 TablaN2[10, 14].Style.BackColor == Color.Aqua &&
                 TablaN2[11, 14].Style.BackColor == Color.Aqua)
             {
+                p3 = true;
                 N2PIC3.Visible = true;
+                if (MessageBox.Show("Función de Transición: Determina el comportamiento del autómata, indicando el cambio de estado " +
+                    "y lo que se consume de la cadena a validar",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://www.matesfacil.com/automatas-lenguajes/automata-finito-y-su-lenguaje.html");
+                }
             }
 
-            if (TablaN2[2, 11].Style.BackColor == Color.Aqua &&
+            if (!p4 && TablaN2[2, 11].Style.BackColor == Color.Aqua &&
                 TablaN2[2, 10].Style.BackColor == Color.Aqua &&
                 TablaN2[2, 9].Style.BackColor == Color.Aqua &&
                 TablaN2[2, 8].Style.BackColor == Color.Aqua &&
                 TablaN2[2, 7].Style.BackColor == Color.Aqua &&
-                TablaN2[2, 6].Style.BackColor == Color.Aqua)
+                TablaN2[2, 6].Style.BackColor == Color.Aqua &&
+                TablaN2[2, 5].Style.BackColor == Color.Aqua &&
+                TablaN2[2, 4].Style.BackColor == Color.Aqua)
             {
+                p4 = true;
                 N2PIC4.Visible = true;
+                if (MessageBox.Show("Expresión Regular: Definien de forma declarativa las cadenas que queremos aceptar",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("http://antares.sip.ucm.es:8180/webtalf/index.jsp?submenu=temas/submenuRegulares&contenido=temas/exprRegulares");
+                }
             }
 
-            if (TablaN2[9, 13].Style.BackColor == Color.Aqua &&
+            if (!p5 && TablaN2[9, 13].Style.BackColor == Color.Aqua &&
                 TablaN2[10, 12].Style.BackColor == Color.Aqua &&
                 TablaN2[11, 11].Style.BackColor == Color.Aqua &&
                 TablaN2[12, 10].Style.BackColor == Color.Aqua &&
@@ -178,10 +215,18 @@ namespace SopaDeLetras
                 TablaN2[14, 8].Style.BackColor == Color.Aqua &&
                 TablaN2[15, 7].Style.BackColor == Color.Aqua )
             {
+                p5 = true;
                 N2PIC5.Visible = true;
+                if (MessageBox.Show("Jerarquía de Chomsky: es una clasificación jerárquica de distintos " +
+                    "tipos de gramáticas formales que generan lenguajes formales",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Jerarqu%C3%ADa_de_Chomsky");
+                }
             }
 
-            if (TablaN2[4, 3].Style.BackColor == Color.Aqua &&
+            if (!p6 && TablaN2[4, 3].Style.BackColor == Color.Aqua &&
                 TablaN2[5, 3].Style.BackColor == Color.Aqua &&
                 TablaN2[5, 3].Style.BackColor == Color.Aqua &&
                 TablaN2[6, 3].Style.BackColor == Color.Aqua &&
@@ -190,7 +235,15 @@ namespace SopaDeLetras
                 TablaN2[9, 3].Style.BackColor == Color.Aqua &&
                 TablaN2[10, 3].Style.BackColor == Color.Aqua)
             {
+                p6 = true;
                 N2PIC6.Visible = true;
+                if (MessageBox.Show("Aceptación de una cadena: Es cuando el automata llega a un estado final o de aceptación" +
+                    " validando toda la cadena que se esta evaluando",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("http://antares.sip.ucm.es:8180/webtalf/index.jsp?submenu=temas/submenuRegulares&contenido=temas/afd");
+                }
             }
         }
 

@@ -35,23 +35,11 @@
             this.N3pa1 = new System.Windows.Forms.Label();
             this.N3pa3 = new System.Windows.Forms.Label();
             this.N3pa4 = new System.Windows.Forms.Label();
-            this.N3pa5 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.N3pa2 = new System.Windows.Forms.Label();
             this.N3PIC1 = new System.Windows.Forms.PictureBox();
             this.N3PIC2 = new System.Windows.Forms.PictureBox();
             this.N3PIC3 = new System.Windows.Forms.PictureBox();
             this.N3PIC4 = new System.Windows.Forms.PictureBox();
-            this.N3PIC5 = new System.Windows.Forms.PictureBox();
-            this.N3PIC6 = new System.Windows.Forms.PictureBox();
-            this.N3PIC7 = new System.Windows.Forms.PictureBox();
-            this.N3PIC8 = new System.Windows.Forms.PictureBox();
-            this.N3PIC9 = new System.Windows.Forms.PictureBox();
-            this.N3PIC10 = new System.Windows.Forms.PictureBox();
             this.Tiempo = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.terminar = new System.Windows.Forms.Button();
@@ -61,12 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.N3PIC2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.N3PIC3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.N3PIC4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC10)).BeginInit();
             this.SuspendLayout();
             // 
             // TablaN3
@@ -108,11 +90,11 @@
             this.N3pa1.BackColor = System.Drawing.Color.Transparent;
             this.N3pa1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N3pa1.ForeColor = System.Drawing.SystemColors.Control;
-            this.N3pa1.Location = new System.Drawing.Point(1104, 108);
+            this.N3pa1.Location = new System.Drawing.Point(1081, 214);
             this.N3pa1.Name = "N3pa1";
-            this.N3pa1.Size = new System.Drawing.Size(64, 22);
+            this.N3pa1.Size = new System.Drawing.Size(62, 22);
             this.N3pa1.TabIndex = 8;
-            this.N3pa1.Text = "ALDO";
+            this.N3pa1.Text = "AFND";
             // 
             // N3pa3
             // 
@@ -120,11 +102,11 @@
             this.N3pa3.BackColor = System.Drawing.Color.Transparent;
             this.N3pa3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N3pa3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.N3pa3.Location = new System.Drawing.Point(1058, 210);
+            this.N3pa3.Location = new System.Drawing.Point(1081, 316);
             this.N3pa3.Name = "N3pa3";
-            this.N3pa3.Size = new System.Drawing.Size(116, 22);
+            this.N3pa3.Size = new System.Drawing.Size(120, 22);
             this.N3pa3.TabIndex = 8;
-            this.N3pa3.Text = "FERNANDO";
+            this.N3pa3.Text = "QUINTUPLA";
             // 
             // N3pa4
             // 
@@ -132,83 +114,11 @@
             this.N3pa4.BackColor = System.Drawing.Color.Transparent;
             this.N3pa4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N3pa4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.N3pa4.Location = new System.Drawing.Point(1077, 260);
+            this.N3pa4.Location = new System.Drawing.Point(1081, 366);
             this.N3pa4.Name = "N3pa4";
-            this.N3pa4.Size = new System.Drawing.Size(97, 22);
+            this.N3pa4.Size = new System.Drawing.Size(113, 22);
             this.N3pa4.TabIndex = 8;
-            this.N3pa4.Text = "FABRIZIO";
-            // 
-            // N3pa5
-            // 
-            this.N3pa5.AutoSize = true;
-            this.N3pa5.BackColor = System.Drawing.Color.Transparent;
-            this.N3pa5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.N3pa5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.N3pa5.Location = new System.Drawing.Point(1102, 310);
-            this.N3pa5.Name = "N3pa5";
-            this.N3pa5.Size = new System.Drawing.Size(72, 22);
-            this.N3pa5.TabIndex = 8;
-            this.N3pa5.Text = "DIEGO";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(1089, 364);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 22);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "MIGUEL";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(1095, 422);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 22);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "BARDO";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(1108, 480);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 22);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "MAYO";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(1103, 540);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 22);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "KEVIN";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.Control;
-            this.label9.Location = new System.Drawing.Point(1115, 586);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 22);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "IVAN";
+            this.N3pa4.Text = "SEPTUPLA";
             // 
             // N3pa2
             // 
@@ -216,18 +126,18 @@
             this.N3pa2.BackColor = System.Drawing.Color.Transparent;
             this.N3pa2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N3pa2.ForeColor = System.Drawing.Color.White;
-            this.N3pa2.Location = new System.Drawing.Point(1067, 160);
+            this.N3pa2.Location = new System.Drawing.Point(1081, 266);
             this.N3pa2.Name = "N3pa2";
-            this.N3pa2.Size = new System.Drawing.Size(107, 22);
+            this.N3pa2.Size = new System.Drawing.Size(49, 22);
             this.N3pa2.TabIndex = 8;
-            this.N3pa2.Text = "MELCHOR";
+            this.N3pa2.Text = "AFD";
             // 
             // N3PIC1
             // 
             this.N3PIC1.BackColor = System.Drawing.Color.Transparent;
             this.N3PIC1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC1.BackgroundImage")));
             this.N3PIC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC1.Location = new System.Drawing.Point(1052, 96);
+            this.N3PIC1.Location = new System.Drawing.Point(1017, 202);
             this.N3PIC1.Name = "N3PIC1";
             this.N3PIC1.Size = new System.Drawing.Size(46, 34);
             this.N3PIC1.TabIndex = 9;
@@ -238,7 +148,7 @@
             this.N3PIC2.BackColor = System.Drawing.Color.Transparent;
             this.N3PIC2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC2.BackgroundImage")));
             this.N3PIC2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC2.Location = new System.Drawing.Point(1015, 148);
+            this.N3PIC2.Location = new System.Drawing.Point(1017, 254);
             this.N3PIC2.Name = "N3PIC2";
             this.N3PIC2.Size = new System.Drawing.Size(46, 34);
             this.N3PIC2.TabIndex = 9;
@@ -249,7 +159,7 @@
             this.N3PIC3.BackColor = System.Drawing.Color.Transparent;
             this.N3PIC3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC3.BackgroundImage")));
             this.N3PIC3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC3.Location = new System.Drawing.Point(1006, 198);
+            this.N3PIC3.Location = new System.Drawing.Point(1017, 304);
             this.N3PIC3.Name = "N3PIC3";
             this.N3PIC3.Size = new System.Drawing.Size(46, 34);
             this.N3PIC3.TabIndex = 10;
@@ -260,77 +170,11 @@
             this.N3PIC4.BackColor = System.Drawing.Color.Transparent;
             this.N3PIC4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC4.BackgroundImage")));
             this.N3PIC4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC4.Location = new System.Drawing.Point(1025, 248);
+            this.N3PIC4.Location = new System.Drawing.Point(1017, 354);
             this.N3PIC4.Name = "N3PIC4";
             this.N3PIC4.Size = new System.Drawing.Size(46, 34);
             this.N3PIC4.TabIndex = 10;
             this.N3PIC4.TabStop = false;
-            // 
-            // N3PIC5
-            // 
-            this.N3PIC5.BackColor = System.Drawing.Color.Transparent;
-            this.N3PIC5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC5.BackgroundImage")));
-            this.N3PIC5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC5.Location = new System.Drawing.Point(1043, 298);
-            this.N3PIC5.Name = "N3PIC5";
-            this.N3PIC5.Size = new System.Drawing.Size(46, 34);
-            this.N3PIC5.TabIndex = 10;
-            this.N3PIC5.TabStop = false;
-            // 
-            // N3PIC6
-            // 
-            this.N3PIC6.BackColor = System.Drawing.Color.Transparent;
-            this.N3PIC6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC6.BackgroundImage")));
-            this.N3PIC6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC6.Location = new System.Drawing.Point(1043, 352);
-            this.N3PIC6.Name = "N3PIC6";
-            this.N3PIC6.Size = new System.Drawing.Size(46, 34);
-            this.N3PIC6.TabIndex = 10;
-            this.N3PIC6.TabStop = false;
-            // 
-            // N3PIC7
-            // 
-            this.N3PIC7.BackColor = System.Drawing.Color.Transparent;
-            this.N3PIC7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC7.BackgroundImage")));
-            this.N3PIC7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC7.Location = new System.Drawing.Point(1043, 410);
-            this.N3PIC7.Name = "N3PIC7";
-            this.N3PIC7.Size = new System.Drawing.Size(46, 34);
-            this.N3PIC7.TabIndex = 10;
-            this.N3PIC7.TabStop = false;
-            // 
-            // N3PIC8
-            // 
-            this.N3PIC8.BackColor = System.Drawing.Color.Transparent;
-            this.N3PIC8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC8.BackgroundImage")));
-            this.N3PIC8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC8.Location = new System.Drawing.Point(1043, 468);
-            this.N3PIC8.Name = "N3PIC8";
-            this.N3PIC8.Size = new System.Drawing.Size(46, 34);
-            this.N3PIC8.TabIndex = 10;
-            this.N3PIC8.TabStop = false;
-            // 
-            // N3PIC9
-            // 
-            this.N3PIC9.BackColor = System.Drawing.Color.Transparent;
-            this.N3PIC9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC9.BackgroundImage")));
-            this.N3PIC9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC9.Location = new System.Drawing.Point(1043, 528);
-            this.N3PIC9.Name = "N3PIC9";
-            this.N3PIC9.Size = new System.Drawing.Size(46, 34);
-            this.N3PIC9.TabIndex = 10;
-            this.N3PIC9.TabStop = false;
-            // 
-            // N3PIC10
-            // 
-            this.N3PIC10.BackColor = System.Drawing.Color.Transparent;
-            this.N3PIC10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("N3PIC10.BackgroundImage")));
-            this.N3PIC10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.N3PIC10.Location = new System.Drawing.Point(1052, 574);
-            this.N3PIC10.Name = "N3PIC10";
-            this.N3PIC10.Size = new System.Drawing.Size(46, 34);
-            this.N3PIC10.TabIndex = 10;
-            this.N3PIC10.TabStop = false;
             // 
             // Tiempo
             // 
@@ -384,22 +228,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.terminar);
             this.Controls.Add(this.Tiempo);
-            this.Controls.Add(this.N3PIC10);
-            this.Controls.Add(this.N3PIC9);
-            this.Controls.Add(this.N3PIC8);
-            this.Controls.Add(this.N3PIC7);
-            this.Controls.Add(this.N3PIC6);
-            this.Controls.Add(this.N3PIC5);
             this.Controls.Add(this.N3PIC4);
             this.Controls.Add(this.N3PIC3);
             this.Controls.Add(this.N3PIC2);
             this.Controls.Add(this.N3PIC1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.N3pa5);
             this.Controls.Add(this.N3pa4);
             this.Controls.Add(this.N3pa3);
             this.Controls.Add(this.N3pa2);
@@ -411,17 +243,12 @@
             this.MaximumSize = new System.Drawing.Size(1230, 777);
             this.Name = "Nivel3";
             this.Text = "Nivel 3";
+            this.Load += new System.EventHandler(this.Nivel3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TablaN3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.N3PIC1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.N3PIC2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.N3PIC3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.N3PIC4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.N3PIC10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,23 +261,11 @@
         private System.Windows.Forms.Label N3pa1;
         private System.Windows.Forms.Label N3pa3;
         private System.Windows.Forms.Label N3pa4;
-        private System.Windows.Forms.Label N3pa5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label N3pa2;
         private System.Windows.Forms.PictureBox N3PIC1;
         private System.Windows.Forms.PictureBox N3PIC2;
         private System.Windows.Forms.PictureBox N3PIC3;
         private System.Windows.Forms.PictureBox N3PIC4;
-        private System.Windows.Forms.PictureBox N3PIC5;
-        private System.Windows.Forms.PictureBox N3PIC6;
-        private System.Windows.Forms.PictureBox N3PIC7;
-        private System.Windows.Forms.PictureBox N3PIC8;
-        private System.Windows.Forms.PictureBox N3PIC9;
-        private System.Windows.Forms.PictureBox N3PIC10;
         private System.Windows.Forms.Label Tiempo;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button terminar;

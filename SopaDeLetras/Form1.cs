@@ -19,10 +19,10 @@ namespace SopaDeLetras
 
         private void iniciar_Click(object sender, EventArgs e)
         {
-            //Nivel1 llamarN1 = new Nivel1();
-            //llamarN1.Show();
-            Nivel2 llamarN2 = new Nivel2();
-            llamarN2.Show();
+            Nivel1 llamarN1 = new Nivel1();
+            llamarN1.Show();
+            ///Nivel3 llamarN3 = new Nivel3();
+            //llamarN3.Show();
             this.Visible = false;
             
         }
@@ -37,7 +37,8 @@ namespace SopaDeLetras
                             "\n1.- Para seleccionar una letra dar click izquierdo" +
                             "\n" +
                             "\n2.- Para deseleccionar dar doble click izquierdo");
-             
+            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

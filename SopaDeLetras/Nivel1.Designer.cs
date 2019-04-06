@@ -111,9 +111,9 @@
             this.pa2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pa2.Location = new System.Drawing.Point(1031, 165);
             this.pa2.Name = "pa2";
-            this.pa2.Size = new System.Drawing.Size(90, 22);
+            this.pa2.Size = new System.Drawing.Size(103, 22);
             this.pa2.TabIndex = 2;
-            this.pa2.Text = "ESTADO";
+            this.pa2.Text = "ESTADOS";
             // 
             // pa3
             // 

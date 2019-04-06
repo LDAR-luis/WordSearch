@@ -13,6 +13,7 @@ namespace SopaDeLetras
     public partial class Nivel3 : Form
     {
         Random letras = new Random();
+        bool p1 = false, p2 = false, p3 = false, p4 = false;
         int segundos;
         int minutos;
         public Nivel3()
@@ -22,12 +23,6 @@ namespace SopaDeLetras
             N3PIC2.Visible = false;
             N3PIC3.Visible = false;
             N3PIC4.Visible = false;
-            N3PIC5.Visible = false;
-            N3PIC6.Visible = false;
-            N3PIC7.Visible = false;
-            N3PIC8.Visible = false;
-            N3PIC9.Visible = false;
-            N3PIC10.Visible = false;
             terminar.Visible = false;
 
             TablaN3.RowCount = 22;
@@ -53,74 +48,47 @@ namespace SopaDeLetras
         public void inicializarPalabras() {
 
             TablaN3[24, 1].Value = 'A';
-            TablaN3[23, 2].Value = 'L';
-            TablaN3[22, 3].Value = 'D';
-            TablaN3[21, 4].Value = 'O';
+            TablaN3[23, 2].Value = 'F';
+            TablaN3[22, 3].Value = 'N';
+            TablaN3[21, 4].Value = 'D';
 
-            TablaN3[7, 0].Value = 'M';
-            TablaN3[6, 1].Value = 'E';
-            TablaN3[5, 2].Value = 'L';
-            TablaN3[4, 3].Value = 'C';
-            TablaN3[3, 4].Value = 'H';
-            TablaN3[2, 5].Value = 'O';
-            TablaN3[1, 6].Value = 'R';
+            TablaN3[12, 8].Value = 'A';
+            TablaN3[11, 9].Value = 'F';
+            TablaN3[10, 10].Value = 'D';
 
 
-            TablaN3[8, 21].Value = 'F';
-            TablaN3[9, 20].Value = 'E';
-            TablaN3[10, 19].Value = 'R';
+            TablaN3[8, 21].Value = 'Q';
+            TablaN3[9, 20].Value = 'U';
+            TablaN3[10, 19].Value = 'I';
             TablaN3[11, 18].Value = 'N';
-            TablaN3[12, 17].Value = 'A';
-            TablaN3[13, 16].Value = 'N';
-            TablaN3[14, 15].Value = 'D';
-            TablaN3[15, 14].Value = '0';
-
-            TablaN3[8, 12].Value = 'F';
-            TablaN3[7, 11].Value = 'A';
-            TablaN3[6, 10].Value = 'B';
-            TablaN3[5, 9].Value = 'R';
-            TablaN3[4, 8].Value = 'I';
-            TablaN3[3, 7].Value = 'Z';
-            TablaN3[2, 6].Value = 'I';
-            TablaN3[1, 5].Value = 'O';
+            TablaN3[12, 17].Value = 'T';
+            TablaN3[13, 16].Value = 'U';
+            TablaN3[14, 15].Value = 'P';
+            TablaN3[15, 14].Value = 'L';
+            TablaN3[16, 13].Value = 'A';
 
 
-            TablaN3[12, 0].Value = 'D';
-            TablaN3[13, 0].Value = 'I';
-            TablaN3[14, 0].Value = 'E';
-            TablaN3[15, 0].Value = 'G';
-            TablaN3[16, 0].Value = 'O';
-
-            TablaN3[0, 15].Value = 'M';
-            TablaN3[1, 16].Value = 'I';
-            TablaN3[2, 17].Value = 'G';
-            TablaN3[3, 18].Value = 'U';
-            TablaN3[4, 19].Value = 'E';
-            TablaN3[5, 20].Value = 'L';
-
-            TablaN3[9, 2].Value = 'B';
-            TablaN3[9, 3].Value = 'A';
-            TablaN3[9, 4].Value = 'R';
-            TablaN3[9, 5].Value = 'D';
-            TablaN3[9, 6].Value = 'O';
-
-            TablaN3[21, 1].Value = 'M';
-            TablaN3[22, 2].Value = 'A';
-            TablaN3[23, 3].Value = 'Y';
-            TablaN3[24, 4].Value = 'O';
+            TablaN3[8, 12].Value = 'S';
+            TablaN3[7, 11].Value = 'E';
+            TablaN3[6, 10].Value = 'P';
+            TablaN3[5, 9].Value = 'T';
+            TablaN3[4, 8].Value = 'U';
+            TablaN3[3, 7].Value = 'P';
+            TablaN3[2, 6].Value = 'L';
+            TablaN3[1, 5].Value = 'A';
 
 
-            TablaN3[18, 5].Value = 'K';
-            TablaN3[18, 6].Value = 'E';
-            TablaN3[18, 7].Value = 'V';
-            TablaN3[18, 8].Value = 'I';
-            TablaN3[18, 9].Value = 'N';
+            TablaN3[8, 0].Value = 'G';
+            TablaN3[9, 0].Value = 'R';
+            TablaN3[10, 0].Value = 'A';
+            TablaN3[11, 0].Value = 'M';
+            TablaN3[12, 0].Value = 'A';
+            TablaN3[13, 0].Value = 'T';
+            TablaN3[14, 0].Value = 'I';
+            TablaN3[15, 0].Value = 'C';
+            TablaN3[16, 0].Value = 'A';
 
-
-            TablaN3[19, 16].Value = 'I';
-            TablaN3[20, 15].Value = 'V';
-            TablaN3[21, 14].Value = 'A';
-            TablaN3[22, 13].Value = 'N';
+            
         }
 
         private void Color_click(object sender, EventArgs e)
@@ -132,107 +100,98 @@ namespace SopaDeLetras
 
         public void validacion()
         {
-            if (TablaN3[24, 1].Style.BackColor == Color.Pink && TablaN3[23, 2].Style.BackColor == Color.Pink && TablaN3[22, 3].Style.BackColor == Color.Pink &&
+            if (!p1 && TablaN3[24, 1].Style.BackColor == Color.Pink && 
+                TablaN3[23, 2].Style.BackColor == Color.Pink && 
+                TablaN3[22, 3].Style.BackColor == Color.Pink &&
                 TablaN3[21, 4].Style.BackColor == Color.Pink)
             {
-
+                p1 = true;
                 N3PIC1.Visible = true;
-
+                if (MessageBox.Show("AFND: es un autómata finito que, a diferencia de los autómatas finitos deterministas (AFD)," +
+                    " posee al menos un estado q ∈ Q, tal que para un símbolo a ∈ Σ del alfabeto, existe más de una " +
+                    "transición δ(q,a) posible.",
+                   "¿Quieres saber más?",
+                   MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Aut%C3%B3mata_finito_no_determinista");
+                }
             }
 
-            if (TablaN3[7, 0].Style.BackColor == Color.Pink && TablaN3[6, 1].Style.BackColor == Color.Pink && TablaN3[5, 2].Style.BackColor == Color.Pink &&
-                TablaN3[4, 3].Style.BackColor == Color.Pink &&
-                TablaN3[3, 4].Style.BackColor == Color.Pink &&
-                TablaN3[2, 5].Style.BackColor == Color.Pink &&
-                TablaN3[1, 6].Style.BackColor == Color.Pink)
+            if (!p2 && TablaN3[12, 8].Style.BackColor == Color.Pink && 
+                TablaN3[11, 9].Style.BackColor == Color.Pink && 
+                TablaN3[10, 10].Style.BackColor == Color.Pink)
             {
-
+                p2 = true;
                 N3PIC2.Visible = true;
-
+                if (MessageBox.Show("AFD: es un autómata finito que además es un sistema determinista; es decir, para cada " +
+                    "estado en que se encuentre el autómata, y con cualquier símbolo del alfabeto leído, existe siempre " +
+                    "no más de una transición posible desde ese estado y con ese símbolo.",
+                   "¿Quieres saber más?",
+                   MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Aut%C3%B3mata_finito_determinista");
+                }
             }
 
-            if (TablaN3[8, 21].Style.BackColor == Color.Pink && TablaN3[9, 20].Style.BackColor == Color.Pink && TablaN3[10, 19].Style.BackColor == Color.Pink &&
-               TablaN3[11, 18].Style.BackColor == Color.Pink &&
-               TablaN3[12, 17].Style.BackColor == Color.Pink &&
-               TablaN3[13, 16].Style.BackColor == Color.Pink &&
-               TablaN3[14, 15].Style.BackColor == Color.Pink &&
-               TablaN3[15, 14].Style.BackColor == Color.Pink)
+            if (!p3 && TablaN3[8, 21].Style.BackColor == Color.Pink && 
+                TablaN3[9, 20].Style.BackColor == Color.Pink && 
+                TablaN3[10, 19].Style.BackColor == Color.Pink &&
+                TablaN3[11, 18].Style.BackColor == Color.Pink &&
+                TablaN3[12, 17].Style.BackColor == Color.Pink &&
+                TablaN3[13, 16].Style.BackColor == Color.Pink &&
+                TablaN3[14, 15].Style.BackColor == Color.Pink &&
+                TablaN3[15, 14].Style.BackColor == Color.Pink &&
+                TablaN3[16, 13].Style.BackColor == Color.Pink)
             {
-
+                p3 = true;
                 N3PIC3.Visible = true;
-
+                if (MessageBox.Show("Quintupla: Formalmente, se define como una 5-tupla (Q, Σ, q0, δ, F) donde:" +
+                    "Q => es un conjunto de estados;" +
+                    "Σ =>  es un alfabeto;" +
+                    "q0 => es el estado inicial;" +
+                    "δ => es una función de transición;" +
+                    "F =>  es un conjunto de estados finales o de aceptación.",
+                   "¿Quieres saber más?",
+                   MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Aut%C3%B3mata_finito_determinista");
+                }
             }
 
-            if (TablaN3[8, 12].Style.BackColor == Color.Pink && TablaN3[7, 11].Style.BackColor == Color.Pink && TablaN3[6, 10].Style.BackColor == Color.Pink &&
-              TablaN3[5, 9].Style.BackColor == Color.Pink &&
-              TablaN3[4, 8].Style.BackColor == Color.Pink &&
-              TablaN3[3, 7].Style.BackColor == Color.Pink &&
-              TablaN3[2, 6].Style.BackColor == Color.Pink &&
-              TablaN3[1, 5].Style.BackColor == Color.Pink)
+            if (!p4 && TablaN3[8, 12].Style.BackColor == Color.Pink && 
+                TablaN3[7, 11].Style.BackColor == Color.Pink && 
+                TablaN3[6, 10].Style.BackColor == Color.Pink &&
+                TablaN3[5, 9].Style.BackColor == Color.Pink &&
+                TablaN3[4, 8].Style.BackColor == Color.Pink &&
+                TablaN3[3, 7].Style.BackColor == Color.Pink &&
+                TablaN3[2, 6].Style.BackColor == Color.Pink &&
+                TablaN3[1, 5].Style.BackColor == Color.Pink)
             {
-
+                p4 = true;
                 N3PIC4.Visible = true;
-
-            }
-            if (TablaN3[12, 0].Style.BackColor == Color.Pink && TablaN3[13, 0].Style.BackColor == Color.Pink && TablaN3[14, 0].Style.BackColor == Color.Pink &&
-                TablaN3[15, 0].Style.BackColor == Color.Pink &&
-                TablaN3[16, 0].Style.BackColor == Color.Pink)
-            {
-
-                N3PIC5.Visible = true;
-
-            }
-
-            if (TablaN3[0, 15].Style.BackColor == Color.Pink && TablaN3[1, 16].Style.BackColor == Color.Pink && TablaN3[2, 17].Style.BackColor == Color.Pink &&
-                TablaN3[3, 18].Style.BackColor == Color.Pink &&
-                TablaN3[4, 19].Style.BackColor == Color.Pink &&
-                TablaN3[5, 20].Style.BackColor == Color.Pink)
-            {
-
-                N3PIC6.Visible = true;
-
+                if (MessageBox.Show("Septupla: Formalmente, un autómata con pila puede ser descrito como una séptupla M=(S,Σ,Γ,δ,q0,Z,F) donde:" +
+                    "S => es un conjunto finito de estados;" +
+                    "Σ => es alfabeto de símbolos de entrada;" +
+                    "Γ => es alfabeto de símbolos de pila;" +
+                    "δ => es una función de transición;" +
+                    "q0 => es el estado inicial;" +
+                    "Z => es el símbolo inicial de la pila;" +
+                    "F =>  es un conjunto de estados finales o de aceptación.",
+                   "¿Quieres saber más?",
+                   MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Aut%C3%B3mata_con_pila");
+                }
             }
 
-            if (TablaN3[9, 2].Style.BackColor == Color.Pink && TablaN3[9, 3].Style.BackColor == Color.Pink && TablaN3[9, 4].Style.BackColor == Color.Pink &&
-               TablaN3[9, 5].Style.BackColor == Color.Pink &&
-               TablaN3[9, 6].Style.BackColor == Color.Pink)
-            {
-
-                N3PIC7.Visible = true;
-
-            }
-
-            if (TablaN3[21, 1].Style.BackColor == Color.Pink && TablaN3[22, 2].Style.BackColor == Color.Pink && TablaN3[23, 3].Style.BackColor == Color.Pink &&
-               TablaN3[24, 4].Style.BackColor == Color.Pink)
-            {
-
-                N3PIC8.Visible = true;
-
-            }
-
-            if (TablaN3[18, 5].Style.BackColor == Color.Pink && TablaN3[18, 6].Style.BackColor == Color.Pink && TablaN3[18, 7].Style.BackColor == Color.Pink &&
-               TablaN3[18, 8].Style.BackColor == Color.Pink &&
-               TablaN3[18, 9].Style.BackColor == Color.Pink)
-            {
-
-                N3PIC9.Visible = true;
-
-            }
-
-            if (TablaN3[19, 16].Style.BackColor == Color.Pink && TablaN3[20, 15].Style.BackColor == Color.Pink && TablaN3[21, 14].Style.BackColor == Color.Pink &&
-               TablaN3[22, 13].Style.BackColor == Color.Pink)
-            {
-
-                N3PIC10.Visible = true;
-            }
+           
         }
         
 
         public void JuegoTerminado()
         {
 
-            if (N3PIC1.Visible && N3PIC2.Visible && N3PIC3.Visible && N3PIC4.Visible && N3PIC5.Visible && N3PIC6.Visible & N3PIC7.Visible & N3PIC8.Visible
-                & N3PIC9.Visible & N3PIC10.Visible)
+            if (N3PIC1.Visible && N3PIC2.Visible && N3PIC3.Visible && N3PIC4.Visible)
             {
                 timer1.Stop();
                 MessageBox.Show("¡¡FELICIDADES HAS TERMINADO EL JUEGO!!" +
@@ -269,6 +228,11 @@ namespace SopaDeLetras
           
             this.Close();
            
+
+        }
+
+        private void Nivel3_Load(object sender, EventArgs e)
+        {
 
         }
     }

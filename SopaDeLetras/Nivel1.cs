@@ -16,6 +16,7 @@ namespace SopaDeLetras
     public partial class Nivel1 : Form
     {
         Random letras = new Random();
+        bool p1 = false, p2 = false, p3 = false, p4 = false, p5 = false, p6 = false;
          int segundos;
          int   minutos;
         public Nivel1()
@@ -77,6 +78,7 @@ namespace SopaDeLetras
             Tabla[5, 4].Value = 'A';
             Tabla[6, 5].Value = 'D';
             Tabla[7, 6].Value = 'O';
+            Tabla[8, 7].Value = 'S';
 
 
             Tabla[0, 1].Value = 'I';
@@ -122,7 +124,7 @@ namespace SopaDeLetras
         {
             // Verifico en la tabla si las palabra esta iluminada si es asi entonces hago visible la palomita
             
-            if (Tabla[8, 9].Style.BackColor == Color.YellowGreen &&
+            if (! p1 && Tabla[8, 9].Style.BackColor == Color.YellowGreen &&
                 Tabla[9, 9].Style.BackColor == Color.YellowGreen &&
                 Tabla[10, 9].Style.BackColor == Color.YellowGreen &&
                 Tabla[11, 9].Style.BackColor == Color.YellowGreen &&
@@ -130,23 +132,39 @@ namespace SopaDeLetras
                 Tabla[13, 9].Style.BackColor == Color.YellowGreen &&
                 Tabla[14, 9].Style.BackColor == Color.YellowGreen )
             {
-               
                 pic1.Visible = true;
+                p1 = true;
+                if (MessageBox.Show("Simbolo: Un dato arbitrario que tiene algún significado o efecto en la máquina." +
+                    " A estos símbolos también se les llama 'letras' o 'átomos'", 
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Teor%C3%ADa_de_aut%C3%B3matas");
+                }
             }
 
-            if (Tabla[2, 1].Style.BackColor == Color.YellowGreen &&
+            if (!p2 && Tabla[2, 1].Style.BackColor == Color.YellowGreen &&
                 Tabla[3, 2].Style.BackColor == Color.YellowGreen &&
                 Tabla[4, 3].Style.BackColor == Color.YellowGreen &&
                 Tabla[5, 4].Style.BackColor == Color.YellowGreen &&
                 Tabla[6, 5].Style.BackColor == Color.YellowGreen &&
-                Tabla[7, 6].Style.BackColor == Color.YellowGreen)
+                Tabla[7, 6].Style.BackColor == Color.YellowGreen &&
+                Tabla[8, 7].Style.BackColor == Color.YellowGreen)
 
             {
 
                 pic2.Visible = true;
+                p2 = true;
+                if (MessageBox.Show("Estados: Son las fases que puede llegar a tomar un automata durante un proceso" +
+                    "de validacion de una cadena",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://www.matesfacil.com/automatas-lenguajes/automata-finito-y-su-lenguaje.html");
+                }
             }
 
-            if (Tabla[0, 1].Style.BackColor == Color.YellowGreen &&
+            if (!p3 && Tabla[0, 1].Style.BackColor == Color.YellowGreen &&
                 Tabla[0, 2].Style.BackColor == Color.YellowGreen &&
                 Tabla[0, 3].Style.BackColor == Color.YellowGreen &&
                 Tabla[0, 4].Style.BackColor == Color.YellowGreen &&
@@ -155,33 +173,55 @@ namespace SopaDeLetras
                 Tabla[0, 7].Style.BackColor == Color.YellowGreen)
 
             {
-
                 pic3.Visible = true;
+                p3 = true;
+                if (MessageBox.Show("Estado inicial: estado o estados en los que debe de iniciar un automata",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://www.matesfacil.com/automatas-lenguajes/automata-finito-y-su-lenguaje.html");
+                }
             }
 
-            if (Tabla[16, 15].Style.BackColor == Color.YellowGreen && 
+            if (!p4 && Tabla[16, 15].Style.BackColor == Color.YellowGreen && 
                 Tabla[15, 14].Style.BackColor == Color.YellowGreen &&
                 Tabla[14, 13].Style.BackColor == Color.YellowGreen &&
                 Tabla[13, 12].Style.BackColor == Color.YellowGreen &&
                 Tabla[12, 11].Style.BackColor == Color.YellowGreen)
                
             {
-               
                 pic4.Visible = true;
+                p4 = true;
+                if (MessageBox.Show("Estado final(aceptacion): estado o estados en los que debe de terminar " +
+                    "la lectura de una cadena para decir que esta es aceptada",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://www.matesfacil.com/automatas-lenguajes/automata-finito-y-su-lenguaje.html");
+                }
             }
 
-            if (Tabla[15, 2].Style.BackColor == Color.YellowGreen && 
+            if (!p5 && Tabla[15, 2].Style.BackColor == Color.YellowGreen && 
                 Tabla[14, 2].Style.BackColor == Color.YellowGreen &&
                 Tabla[13,2].Style.BackColor == Color.YellowGreen &&
                 Tabla[12, 2].Style.BackColor == Color.YellowGreen &&
                 Tabla[11, 2].Style.BackColor == Color.YellowGreen &&
                 Tabla[10, 2].Style.BackColor == Color.YellowGreen)
             {
-
+                p5 = true;
                 pic5.Visible = true;
+                if (MessageBox.Show("Cadena:Una cadena o palabra es una secuencia finita de símbolos " +
+                    "que pertenecen a un alfabeto y comunmente se denota con la letra w. " +
+                    "La cadena vacía se denota como ε y es una secuencia vacía de símbolos tomados " +
+                    "de cualquier alfabeto Σ",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("http://delta.cs.cinvestav.mx/~mcintosh/comun/summer2006/algebraPablo_html/node4.html");
+                }
             }
 
-            if (Tabla[4, 5].Style.BackColor == Color.YellowGreen &&
+            if (!p6 && Tabla[4, 5].Style.BackColor == Color.YellowGreen &&
                 Tabla[4, 6].Style.BackColor == Color.YellowGreen &&
                 Tabla[4, 7].Style.BackColor == Color.YellowGreen &&
                 Tabla[4, 8].Style.BackColor == Color.YellowGreen &&
@@ -190,7 +230,16 @@ namespace SopaDeLetras
                 Tabla[4, 11].Style.BackColor == Color.YellowGreen  &&
                 Tabla[4,12].Style.BackColor == Color.YellowGreen)
             {
+                p6 = false;
                 pic6.Visible = true;
+                if (MessageBox.Show("Automata: es un modelo matemático para una máquina. Es una máquina que, dada una " +
+                    "entrada de símbolos, 'salta' a través de una serie de estados de acuerdo a una función de " +
+                    "transición ",
+                    "¿Quieres saber más?",
+                    MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("https://es.wikipedia.org/wiki/Teor%C3%ADa_de_aut%C3%B3matas");
+                }
             }
         }
 
